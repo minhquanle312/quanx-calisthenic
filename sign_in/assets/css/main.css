@@ -1,0 +1,124 @@
+a {
+    display: block;
+}
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    height: var(--navbar-height);
+    background-color: var(--black-color);
+    justify-content: space-around;
+    padding: 0 48px;
+}
+
+.header__logo {
+    margin: auto 0;
+}
+
+.header__logo-link {
+    display: block;
+    padding: 16px;
+}
+
+.header__logo-img {
+    width: 34px;
+    height: auto;
+}
+
+/* Container */
+.container {
+    margin-top: var(--navbar-height);
+}
+
+.container__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 36px;
+}
+
+.container__content h2 {
+    margin: 0 0 32px 0;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    text-align: center;
+}
+
+.container__content button {
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    width: 100%;
+    height: 48px;
+    padding: 12px 16px;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #999;
+    color: #495057;
+    margin-bottom: 20px;
+}
+
+.login-form:focus {
+    border: 4px solid #89aefd;
+}
+
+.forgot-password-link {
+    color: blue;
+    display: block;
+    text-decoration: none;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    margin: 20px 0 30px 0;
+    text-align: center;
+}
+
+.forgot-password-link:hover {
+    color: #0a0ac2;
+    text-decoration: underline;
+}
+
+.download-app {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+
+/* Button overwrite */
+.btn.btn--white-color {
+    padding: 12px 28px;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    border: 1px solid var(--black-color);
+}
+
+.btn.btn--white-color:hover {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    border: 1px solid var(--black-color);
+}
+
+/* Btn */
+.download-app-btn {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    margin: 0 4px;
+    border-radius: 4px;
+}
+
+
+/* Responsive mobile */
+@media (max-width: 46.25em) {
+    .container__content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

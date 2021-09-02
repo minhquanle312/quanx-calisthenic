@@ -1,0 +1,60 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #ffffffa6;
+
+    --navbar-height: 72px;
+}
+
+* {
+    box-sizing:inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Button */
+.btn {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--white-color);
+    background-color: var(--black-color);
+    border: 2px solid var(--white-color);
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 4px;
+}
+
+.btn.btn--primary:hover {
+    color: var(--black-color);
+    background-color: var(--white-color);
+}
+
+.btn.btn--blue-color {
+    background-color: blue;
+    border-color: blue;
+}
+
+.btn.btn--blue-color:hover {
+    background-color: #0a0ac2;
+    border-color: #0a0ac2;
+}
+
+.btn.btn--white-color {
+    padding: 16px 48px;
+    background-color: var(--white-color);
+    color: #666;
+    border: 1px solid #666;
+}
+
+.btn.btn--white-color:hover {
+    background-color: #666;
+    color: var(--white-color);
+    border: 1px solid #666;
+}

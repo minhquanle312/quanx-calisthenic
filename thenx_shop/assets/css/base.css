@@ -1,0 +1,58 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #ffffffa6;
+    --primary-color: #ce2424;
+
+    /* --navbar-height: 72px; */
+    --header-height: 650px;
+}
+
+* {
+    box-sizing:inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Fjalla One', sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* Button */
+.btn {
+    font-size: 2rem;
+    line-height: 2rem;
+    text-decoration: none;
+    padding: 12px 24px;
+    border: 2px solid var(--black-color);
+    outline: none;
+}
+
+.btn.btn--primary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.btn.btn--white-color {
+    color: var(--black-color);
+    background-color: var(--white-color);
+}
+
+.btn.btn--transparent {
+    background-color: transparent;
+    color: var(--white-color);
+    border: 3px solid var(--white-color);
+}
+
+.btn--parellogram {
+    transform: skew(-20deg);
+}
+
+.skew-fit {
+    display: block;
+    transform: skew(20deg);
+}

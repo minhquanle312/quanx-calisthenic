@@ -1,0 +1,105 @@
+/* Mobile & Tablet - (max-width: 1023px) */
+@media (max-width: 63.9375em) {
+    .hide-on-mobile-tablet {
+       display: none;
+    }
+    .header__navbar {
+        padding: 0 16px;
+    }
+    .navbar__mobile {
+        display: flex;
+        z-index: 1;
+    }
+    .navbar__mobile-icon {
+        font-size: 3rem;
+        font-weight: 300;
+        color: var(--text-color);
+        line-height: var(--navbar-height);
+        margin-left: 20px;
+    }
+    .navbar__mobile-list {
+        margin-top: 0;
+        position: fixed;
+        top: var(--navbar-height);
+        right: 0;
+        left: 0;
+        color: var(--white-color);
+        background-color: var(--black-color);
+        list-style: none;
+        padding-left: 0;
+        transform: translateY(-150%);
+        opacity: 0;
+        transition: transform linear 0.2s, opacity linear 0.2s;
+        z-index: 1;
+    }
+    .navbar__mobile-item {
+        text-align: center;
+        user-select: none;
+    }
+    .navbar__mobile-item:last-child {
+        margin-top: 20px;
+    }
+    .navbar__mobile-link {
+        display: block;
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        padding: 8px 8px;
+        
+    }
+    .navbar__mobile-link:hover {
+        color: var(--white-color);
+    }
+    .navbar__mobile-btn {
+        margin: auto;
+    }
+    .btn.navbar__mobile-link {
+        color: var(--white-color);
+    }
+}
+
+/* Tablet - (min-width: 740px) and (max-width: 1023px) */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .hide-on-tablet {
+        display: none;
+    }
+}
+
+/* Mobile - (max-width: 723px) */
+@media (max-width: 45.1875em) {
+    .hide-on-mobile {
+        display: none;
+    }
+    .container-item__content {
+        display: flex;
+        justify-content: center;
+    }
+    .container-item__content--mobile {
+        display: flex;
+        flex-direction: column;
+    }
+    .container-item__content--mobile p {
+        text-align: center;
+    }
+    .container-item__content--mobile div {
+        margin: auto;
+    }
+    .row--reverse {
+        flex-direction: column-reverse;
+    }
+    /* Shop */
+    .shop__product-item {
+        padding: 16px;
+    }
+
+    /* Footer */
+    .footer-heading,
+    .footer__item-link {
+        display: flex;
+        justify-content: center;
+    }
+    .app {
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,27 @@
+
+.grid.wide {
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+/* Mobile & Tablet - (max-width: 1023px) */
+@media (max-width: 63.9375em) {
+    .hide-on-mobile-tablet {
+       display: none;
+    }
+}
+
+/* Tablet - (min-width: 740px) and (max-width: 1023px) */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .hide-on-tablet {
+        display: none;
+    }
+}
+
+/* Mobile - (max-width: 723px) */
+@media (max-width: 45.1875em) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
